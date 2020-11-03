@@ -1,4 +1,4 @@
-<header>Head</header>
+<head>Head</head>
 ## Thought of the Day
 
 You can use the [editor on GitHub](https://github.com/Brent-Conner/Brent-Conner.github.io/edit/main/index.md) to maintain and preview the content for your website in Markdown files.
