@@ -1,6 +1,6 @@
 ## Brent Conner (505) 550-2936 | mrbrentconner@gmail.com
-```
-```
+``` thing ```
+
 ### SKILL SUMMARY
 - PowerShell Automation						- Unix experience related to Epic environments
 - Epic Upgrade/Update Specialist			- Strategy Development
