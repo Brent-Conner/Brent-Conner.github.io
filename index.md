@@ -1,6 +1,8 @@
-# Header hash
-
-## Header 2 hash
+# Brent Conner
+(505) 550-2936 | mrbrentconner@gmail.com
+```
+			SKILL SUMMARY
+```
 
 You can use the [editor on GitHub](https://github.com/Brent-Conner/Brent-Conner.github.io/edit/main/index.md) to maintain and preview the content for your website in Markdown files.
 
