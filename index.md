@@ -1,7 +1,16 @@
-# Brent Conner <font size"-5">(505) 550-2936 | mrbrentconner@gmail.com</font>
+## Brent Conner (505) 550-2936 | mrbrentconner@gmail.com
 ```
-			SKILL SUMMARY
 ```
+###SKILL SUMMARY
+- PowerShell Automation						- Unix experience related to Epic environments
+- Epic Upgrade/Update Specialist			- Strategy Development
+- 15+ years of Professional IT experience	- Epic Client Systems Administration
+- Hyperspace Web, MyChart, System Pulse		- Troubleshooting
+- Web Blob, EPS, Interconnect, BCA, Link	- Incident Root Cause Resolution
+- Windows Server 2008/2012/2016/2019		- Process Creation & Documentation
+- Problem Root Cause Analysis				- Project Implementation
+
+
 
 You can use the [editor on GitHub](https://github.com/Brent-Conner/Brent-Conner.github.io/edit/main/index.md) to maintain and preview the content for your website in Markdown files.
 
