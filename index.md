@@ -1,5 +1,4 @@
-# Brent Conner
-(505) 550-2936 | mrbrentconner@gmail.com
+# Brent Conner <font size"-5">(505) 550-2936 | mrbrentconner@gmail.com</font>
 ```
 			SKILL SUMMARY
 ```
