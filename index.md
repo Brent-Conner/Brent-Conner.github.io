@@ -2,7 +2,7 @@
 Brent Conner | (505) 550-2936 | mrbrentconner@gmail.com
 ```
 
-### SKILL SUMMARY
+## SKILL SUMMARY
 - **PowerShell Automation** - Printer creation, Server configuration, Log cleanup, Satellite installation, BCA PC Monitoring, 
 - **Epic Upgrade/Update Specialist** - Runbooks, Downtime minimalization, Experience with Versions 2010, 2014, 2017, May 2019, May 2020, Nov 2020, Feb 2021
 - **Epic Client Systems Administration** - Kuiper, Hyperspace Web, Interconnect, EPS, App Orchard, BCA, MyChart, EpicCare Link, Pulse
