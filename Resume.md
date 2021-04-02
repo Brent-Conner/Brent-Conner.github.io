@@ -1,6 +1,20 @@
-# Header hash
+```
+Brent Conner | (505) 550-2936 | mrbrentconner@gmail.com
+```
 
-## Header 2 hash
+### SKILL SUMMARY
+- **PowerShell Automation** - Printer creation, Server configuration, Log cleanup, Satellite installation, BCA PC Monitoring, 
+- **Epic Upgrade/Update Specialist** - Runbooks, Downtime minimalization, Speedy server health validation, Experience with versions Epic 2010 through Epic Feb 2021
+- **Epic Client Systems Administration** - Kuiper, Hyperspace Web, Interconnect, EPS, App Orchard, BCA, MyChart, EpicCare Link, Pulse
+- Unix experience related to Epic environments
+- Strategy Development
+- 15+ years of Professional IT experience	- 
+- Hyperspace Web, MyChart, System Pulse		- Troubleshooting
+- Web Blob, EPS, Interconnect, BCA, Link	- Incident Root Cause Resolution
+- Windows Server 2008/2012/2016/2019		- Process Creation & Documentation
+- Problem Root Cause Analysis				- Project Implementation
+
+
 
 You can use the [editor on GitHub](https://github.com/Brent-Conner/Brent-Conner.github.io/edit/main/index.md) to maintain and preview the content for your website in Markdown files.
 
