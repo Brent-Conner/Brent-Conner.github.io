@@ -1,6 +1,6 @@
 # Header hash
-[Powershell](https://brent.conner.github.io/PS.ZIP)
-[Onenote](https://brent.conner.github.io/Work.ZIP)
+[Powershell](https://brent.conner.github.io/PS.zip)
+[Onenote](https://brent.conner.github.io/Work.zip)
 ## Header 2 hash
 
 You can use the [editor on GitHub](https://github.com/Brent-Conner/Brent-Conner.github.io/edit/main/index.md) to maintain and preview the content for your website in Markdown files.
