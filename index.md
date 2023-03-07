@@ -1,4 +1,4 @@
-###### Pictures
+##### Pictures
 [Photo of Me](https://brent-conner.github.io/Me.jpg)
 
 [Photo of Family](https://brent-conner.github.io/Fam.jpg)
@@ -19,6 +19,9 @@ Syntax highlighted code block
 # Header 1
 ## Header 2
 ### Header 3
+#### Header 4
+##### Header 5
+###### Header 6
 
 - Bulleted
 - List
