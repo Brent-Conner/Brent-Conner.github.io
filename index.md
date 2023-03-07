@@ -1,6 +1,5 @@
-# Pictures
+### Pictures
 [Photo of Me](https://brent-conner.github.io/Me.jpg)
-
 [Windows Background](https://brent-conner.github.io/backgroundDefault.jpg)
 
 ### Header 2 hash
