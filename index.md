@@ -1,7 +1,11 @@
-##### Pictures
+##### Links
+[LinkedIn](https://www.linkedin.com/in/brent-conner)
+
 [Photo of Me](https://brent-conner.github.io/Me.jpg)
 
 [Photo of Family](https://brent-conner.github.io/Fam.jpg)
+
+
 
 ### 
 
