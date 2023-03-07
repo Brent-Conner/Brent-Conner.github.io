@@ -1,4 +1,4 @@
-##### Links
+### Links
 [LinkedIn](https://www.linkedin.com/in/brent-conner)
 
 [Photo of Me](https://brent-conner.github.io/Me.jpg)
