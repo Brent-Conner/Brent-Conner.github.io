@@ -53,7 +53,8 @@ foreach($server in $servers) {
 Invoke-Command -ComputerName $server { New-Item -Path D:\Scripts\ -Type Directory -Force }
 $s = New-PSSession $server
 Copy-Item -Path "\\epicfileshare\Brent\IIS\PurgeIIS.ps1" -Destination D:\Scripts\ -Force -recurse -ToSession $s
-Copy-Item -Path "\\epicfileshare\Brent\IIS\DPurgeIIS.xml" -Destination D:\Scripts\ -Force -recurse -ToSession $s Invoke-Command -cn $server { Register-ScheduledTask -TaskName "Purge IIS" -Xml (Get-Content "D:\Scripts\DPurgeIIS.xml" | out-string) -User domain\user -Password Rackspace –Force }
+Copy-Item -Path "\\epicfileshare\Brent\IIS\DPurgeIIS.xml" -Destination D:\Scripts\ -Force -recurse -ToSession $s
+Invoke-Command -cn $server { Register-ScheduledTask -TaskName "Purge IIS" -Xml (Get-Content "D:\Scripts\DPurgeIIS.xml" | out-string) -User domain\user -Password Rackspace –Force }
 }
 ```
 
