@@ -20,7 +20,7 @@ puts 'Expanded message'
 
 <details><summary>Interconnect HA Group Enable/Disable</summary>
 
-{% highlight %}
+{% highlight Powershell%}
 # Global Variables
 
 ##################
