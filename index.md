@@ -18,7 +18,7 @@ puts 'Expanded message'
 </details>
 
 
-<details><summary>Interconnect</summary>
+<details><summary>Interconnect HA Group Enable/Disable</summary>
 
 {% highlight %}
 # Global Variables
