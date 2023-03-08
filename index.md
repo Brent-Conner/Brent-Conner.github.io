@@ -8,11 +8,14 @@
 
 ## Powershell Script Examples
 
-<details>
-<summary>PS_ISE</summary>
+```
+$servers = Get-Content -path D:\Scripts\servers.txt
 
-{% highlight %}
-Start-Process $PsHome\powershell.exe -Credential $c -ArgumentList “-Command Start-Process $PSHOME\powershell_ise.exe -Verb Runas” -Wait
-{% endhighlight %}
-
-</details>
+#Copy sxs folder to server and install Pre-reqs
+foreach($server in $servers) {
+$s = New-PSSession $server
+Copy-Item -Path 'D:\Server2019\sources\sxs\' -Destination 'D:\sources\sxs' -Force -recurse -ToSession $s
+Copy-Item -Path 'D:\Server2019\sources\PreReq.xml' -Destination 'D:\sources\' -Force -recurse -ToSession $s
+Invoke-Command -ComputerName $server { Install-WindowsFeature -ConfigurationFilePath "D:\sources\PreReq.xml" -source "D:\sources\sxs\" }
+}
+```
