@@ -27,11 +27,11 @@ Invoke-Command -ComputerName $server { Install-WindowsFeature -ConfigurationFile
 <details>
 
 {% highlight %}
-
+{% raw %}
 $a = "bconner"
 $c = Get-Credential $a
 Start-Process $PsHome\powershell.exe -Credential $c -ArgumentList “-Command Start-Process $PSHOME\powershell_ise.exe -Verb Runas” -Wait
-
+{% endraw %}
 {% endhighlight %}
 
 </details>
