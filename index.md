@@ -11,7 +11,7 @@
 <details>
 <summary>Preview</summary>
 
-{% highlight ruby %}
+{% highlight %}
 puts 'Expanded message'
 {% endhighlight %}
 
@@ -20,7 +20,7 @@ puts 'Expanded message'
 
 <details><summary>Interconnect</summary>
 
-```
+{% highlight %}
 # Global Variables
 
 ##################
@@ -139,7 +139,7 @@ while(1) {
     }
 }
 Menu
-```
+{% endhighlight %}
 </details>
 
 
