@@ -58,88 +58,10 @@ foreach($server in $ICservers) {
     }
 }
 
-function DisableIC {
-
-$ICservers = GroupSelect
-foreach($server in $ICservers) {
-    Write-Host -foreground Green "***********************"
-    Write-Host -foreground Cyan "Stopping IC services on $server"
-    Get-Service -ComputerName $server -Name *Interconnect* | Stop-Service -Force
-    Write-Host -foreground Cyan "Setting to disabled on $server"
-    Get-Service -ComputerName $server -Name *Interconnect* | Set-Service -StartupType Disabled
-    }
-}
-
-function EnableIC {
-
-$ICservers = GroupSelect
-foreach($server in $ICservers) {
-    Write-Host -foreground Green "***********************"
-    Write-Host -foreground Cyan "Setting to automatic on $server"
-    Get-Service -ComputerName $server -Name *Interconnect* | Set-Service -StartupType Automatic
-    Write-Host -foreground Cyan "Starting IC services on $server"
-    Get-Service -ComputerName $server -Name *Interconnect* | Start-Service
-    }
-}
-
-function DisableChoice {
-$name = Read-Host "Enter instance name identifier"
-$ICservers = GroupSelect
-foreach($server in $ICservers) {
-    Write-Host -foreground Green "***********************"
-    Write-Host -foreground Cyan "Stopping IC services on $server"
-    Get-Service -ComputerName $server -Name *$name* | Stop-Service -Force
-    Write-Host -foreground Cyan "Setting to disabled on $server"
-    Get-Service -ComputerName $server -Name *$name* | Set-Service -StartupType Disabled
-    }
-}
-
-function EnableChoice {
-$name = Read-Host "Enter instance name identifier"
-$ICservers = GroupSelect
-foreach($server in $ICservers) {
-    Write-Host -foreground Green "***********************"
-    Write-Host -foreground Cyan "Setting to automatic on $server"
-    Get-Service -ComputerName $server -Name *$name* | Set-Service -StartupType Automatic
-    Write-Host -foreground Cyan "Starting IC services on $server"
-    Get-Service -ComputerName $server -Name *$name* | Start-Service
-    }
-}
-
-Function Menu {
-
-while(1) {
-    Write-host -foreground Yellow "<><><><><><><><><><><><><><>"
-    Write-Host -foreground Cyan "Epic Interconnect Functions"
-    Write-host -foreground Yellow "<><><><><><><><><><><><><><>"
-    Write-host "1.  IC Status"
-	Write-host "2.  IC Enable"
-	Write-host "3.  IC Disable"
-    Write-Host "4.  Wildcard Enable"
-    Write-host -foreground Red "---------------------------------------------------"
-    Write-host "5.  Wildcard Disable"
-    Write-host "6.  "
-    Write-host "7.  "
-    Write-host "8.  Exit Menu"
-    Write-host -foreground Yellow "<><><><><><><><><><><><><><>"
-    Write-host -foreground Yellow "<><><><><><><><><><><><><><>"
-	$MenuOption = Read-host "Selection"
-	
-	Switch($MenuOption) {
-        "1"  {StatusIC}
-		"2"  {EnableIC}
-        "3"  {DisableIC}
-		"4"  {EnableChoice}
-        "5"  {DisableChoice}
-        "6"  {}
-        "7"  {}
-        "8"  {Exit}
-        default {Continue}
-        }
-    }
-}
 Menu
+
 {% endhighlight %}
+
 </details>
 
 
