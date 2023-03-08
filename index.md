@@ -8,7 +8,7 @@
 
 ## Simple Powershell Script Examples
 
-#### Install and bind a cert
+### Install and bind a cert
 ```
 $servers = Get-Content D:\Scripts\_Servers\AzurePOC.txt 
 foreach($server in $servers) {
@@ -26,7 +26,7 @@ Write-Host "***************** $server end ********************"
 }
 ```
 
-#### Install Server pre-reqs requiring sxs files
+### Install Server pre-reqs requiring sxs files
 ```
 $servers = Get-Content -path D:\scripts\servers.txt
 
@@ -35,14 +35,15 @@ $s = New-PSSession $server
 Copy-Item -Path '\\epicfileshare\Brent\Server2019\sources\sxs\' -Destination 'D:\sources\sxs' -Force -recurse -ToSession $s
 Copy-Item -Path '\\epicfileshare\Brent\Server2019\sources\PreReq.xml' -Destination 'D:\sources\' -Force -recurse -ToSession $s
 Invoke-Command -ComputerName $server {
-	Set-ExecutionPolicy RemoteSigned -Force
+Set-ExecutionPolicy RemoteSigned -Force
 	Add-LocalGroupMember -Group "Administrators" -Member "domain\user"
 	Enable-NetFirewallRule -DisplayName "Remote Scheduled Tasks Management (RPC)"
 	Enable-NetFirewallRule -DisplayName "Windows Management Instrumentation (DCOM-In)"
-    Enable-NetFirewallRule -DisplayName "Windows Management Instrumentation (WMI-In)"
-    Set-NetFirewallRule -DisplayName "Windows Remote Management (HTTP-In)" -Profile Domain, Private
-    powercfg.exe -SETACTIVE 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c
-	Install-WindowsFeature -ConfigurationFilePath "D:\sources\PreReq.xml" -source "D:\sources\sxs\" } }
+	Enable-NetFirewallRule -DisplayName "Windows Management Instrumentation (WMI-In)"
+	Set-NetFirewallRule -DisplayName "Windows Remote Management (HTTP-In)" -Profile Domain, Private
+	powercfg.exe -SETACTIVE 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c
+	Install-WindowsFeature -ConfigurationFilePath "D:\sources\PreReq.xml" -source "D:\sources\sxs\" }
+}
 ```
 
 ### Create task on remote server to purge IIS logs
