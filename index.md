@@ -8,6 +8,8 @@
 
 ## Powershell Script Examples
 
+<details>
+
 ```
 $servers = Get-Content -path D:\Scripts\servers.txt
 
@@ -19,3 +21,5 @@ Copy-Item -Path 'D:\Server2019\sources\PreReq.xml' -Destination 'D:\sources\' -F
 Invoke-Command -ComputerName $server { Install-WindowsFeature -ConfigurationFilePath "D:\sources\PreReq.xml" -source "D:\sources\sxs\" }
 }
 ```
+
+</details>
