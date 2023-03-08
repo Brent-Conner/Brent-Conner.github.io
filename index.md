@@ -10,9 +10,9 @@
 
 <details><summary>Interconnect</summary>
 
-### HA Interconnect Groups Enable/Disable
 ```
 # Global Variables
+
 ##################
 
 $ScriptLoc = "\\bhcs.pvt\dfsdept\EpicTech\Scripts\Interconnect\"
@@ -129,6 +129,7 @@ while(1) {
     }
 }
 Menu
-</details>
 ```
+</details>
+
 
