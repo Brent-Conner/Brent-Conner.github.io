@@ -8,16 +8,13 @@
 
 ## Powershell Script Examples
 
-<details><summary>CLICK ME</summary>
-<p>
+<details>
+<summary>Preview</summary>
 
-#### We can hide anything, even code!
+{% highlight ruby %}
+puts 'Expanded message'
+{% endhighlight %}
 
-```ruby
-   puts "Hello World"
-```
-
-</p>
 </details>
 
 
