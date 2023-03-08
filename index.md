@@ -8,9 +8,9 @@
 
 ## Powershell Script Examples
 
-<details><summary>Install Pre-reqs requiring sxs</summary>
+<details>
+
 ```
-{% raw %}
 $servers = Get-Content -path D:\Scripts\servers.txt
 
 #Copy sxs folder to server and install Pre-reqs
@@ -20,16 +20,18 @@ Copy-Item -Path 'D:\Server2019\sources\sxs\' -Destination 'D:\sources\sxs' -Forc
 Copy-Item -Path 'D:\Server2019\sources\PreReq.xml' -Destination 'D:\sources\' -Force -recurse -ToSession $s
 Invoke-Command -ComputerName $server { Install-WindowsFeature -ConfigurationFilePath "D:\sources\PreReq.xml" -source "D:\sources\sxs\" }
 }
-{% endraw %}
 ```
+
 </details>
 
-<details><summary>Open ISE as user</summary>
+<details>
+
 {% highlight %}
-{% raw %}
+
 $a = "bconner"
 $c = Get-Credential $a
 Start-Process $PsHome\powershell.exe -Credential $c -ArgumentList “-Command Start-Process $PSHOME\powershell_ise.exe -Verb Runas” -Wait
-{% endraw %}
+
 {% endhighlight %}
+
 </details>
