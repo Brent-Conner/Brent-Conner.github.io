@@ -18,48 +18,12 @@ puts 'Expanded message'
 </details>
 
 
-<details><summary>Interconnect HA Group Enable/Disable</summary>
+<details><summary>Start PS_ISE as user</summary>
 
 {% highlight powershell %}
-# Global Variables
-
-##################
-
-$ScriptLoc = "\\bhcs.pvt\dfsdept\EpicTech\Scripts\Interconnect\"
-
-Function Brakes { foreach($var in $args) { If(!$var) { Write-Host -foreground red "A variable was NULL, returning to menu."; Pause; Menu } } }
-
-Function GroupSelect {
-
-$slist = Get-ChildItem -path $ScriptLoc"_Servers" -Recurse
-$Num = 1
-Write-Host -foreground Yellow "***********************"
-Write-Host -foreground Yellow ">>>>Server List<<<<"
-foreach($list in $slist) { Write-Host $Num - $list; $Num++ }
-Write-Host -foreground Yellow "***********************"
-$Choice = Read-Host "Choose server list"
-Brakes $choice
-$list = $slist[$Choice-1]
-$Servers = Get-Content -path $ScriptLoc"_Servers\"$list
-Return $Servers
-}
-
-Function StatusIC {
-
-$ICservers = GroupSelect
-foreach($server in $ICservers) {
-    Write-Host -foreground Cyan ">>>>$server<<<<"
-    Write-Host -foreground Cyan "***********************"
-        $statuses = Get-Service -ComputerName $server -ErrorAction SilentlyContinue -Name *Interconnect*
-        foreach($status in $statuses) { 
-        Write-Host $status.status $status.name
-        if($status.status -ne "Running") { Write-Host -foreground Red "???????????????????????" }
-            else { Write-Host -foreground Green "-------------------------------" } }
-    }
-}
-
-Menu
-
+$a = "bconner"
+$c = Get-Credential $a
+Start-Process $PsHome\powershell.exe -Credential $c -ArgumentList “-Command Start-Process $PSHOME\powershell_ise.exe -Verb Runas” -Wait
 {% endhighlight %}
 
 </details>
