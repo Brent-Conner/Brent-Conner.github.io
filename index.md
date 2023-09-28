@@ -1,4 +1,4 @@
-**[Click for LinkedIn profile](https://www.linkedin.com/in/brent-conner)**
+**[<<< LinkedIn profile >>>](https://www.linkedin.com/in/brent-conner)**
 
 ![Photo of Me](https://brent-conner.github.io/Me.jpg)
 
@@ -7,6 +7,15 @@
 
 
 ## Simple Powershell Script Examples
+
+### Satellite forced check-in
+```
+$cmd = Get-ItemPropertyValue "HKLM:\SOFTWARE\WOW6432Node\Epic Systems Corporation\Satellite" -Name Path
+$arg = "/F"
+# Commands are run twice to account for Satellite updates
+Start-Process -FilePath $cmd -ArgumentList $arg -Verb RunAs -Wait
+Start-Process -FilePath $cmd -ArgumentList $arg -Verb RunAs -Wait
+```
 
 ### Install and bind a cert
 ```
@@ -54,7 +63,7 @@ Invoke-Command -ComputerName $server { New-Item -Path D:\Scripts\ -Type Director
 $s = New-PSSession $server
 Copy-Item -Path "\\epicfileshare\Brent\IIS\PurgeIIS.ps1" -Destination D:\Scripts\ -Force -recurse -ToSession $s
 Copy-Item -Path "\\epicfileshare\Brent\IIS\DPurgeIIS.xml" -Destination D:\Scripts\ -Force -recurse -ToSession $s
-Invoke-Command -cn $server { Register-ScheduledTask -TaskName "Purge IIS" -Xml (Get-Content "D:\Scripts\DPurgeIIS.xml" | out-string) -User domain\user -Password Rackspace –Force }
+Invoke-Command -cn $server { Register-ScheduledTask -TaskName "Purge IIS" -Xml (Get-Content "D:\Scripts\DPurgeIIS.xml" | out-string) -User domain\user -Password UTMB –Force }
 }
 ```
 
