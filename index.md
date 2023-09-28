@@ -2,7 +2,7 @@
 
 ![Photo of Me](https://brent-conner.github.io/Me.jpg)
 
-[Click for photo of my family](https://brent-conner.github.io/Fam.jpg)
+[ --- Photo of my family --- ](https://brent-conner.github.io/Fam.jpg)
 
 
 
