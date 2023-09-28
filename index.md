@@ -1,13 +1,13 @@
-**[<<< LinkedIn profile >>>](https://www.linkedin.com/in/brent-conner)**
+**[ --- LinkedIn profile --- ](https://www.linkedin.com/in/brent-conner)**
 
 ![Photo of Me](https://brent-conner.github.io/Me.jpg)
 
 [Click for photo of my family](https://brent-conner.github.io/Fam.jpg)
 
 
-
+<p align="center">
 ## Simple Powershell Script Examples
-
+</p>
 ### Satellite forced check-in
 ```
 $cmd = Get-ItemPropertyValue "HKLM:\SOFTWARE\WOW6432Node\Epic Systems Corporation\Satellite" -Name Path
