@@ -5,9 +5,9 @@
 [Click for photo of my family](https://brent-conner.github.io/Fam.jpg)
 
 
-<p align="center">
+<p align="center"; style="font-size:30px"><b>
 ## Simple Powershell Script Examples
-</p>
+</b></p>
 ### Satellite forced check-in
 ```
 $cmd = Get-ItemPropertyValue "HKLM:\SOFTWARE\WOW6432Node\Epic Systems Corporation\Satellite" -Name Path
