@@ -1,6 +1,6 @@
 **[ --- LinkedIn profile --- ](https://www.linkedin.com/in/brent-conner)**
 
-![Photo of Me](https://brent-conner.github.io/Me.jpg)
+![Photo of Me](https://brent-conner.github.io/Me2.jpg)
 
 [ --- Photo of my family --- ](https://brent-conner.github.io/Fam.jpg)
 
