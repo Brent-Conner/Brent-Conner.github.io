@@ -4,6 +4,8 @@
 
 [ --- Photo of my family --- ](https://brent-conner.github.io/Fam.jpg)
 
+[ --- Website I built for my wife --- ](https://veronicaonmission.github.io)
+
 
 
 ## Simple Powershell Script Examples
@@ -12,6 +14,7 @@
 ```
 $cmd = Get-ItemPropertyValue "HKLM:\SOFTWARE\WOW6432Node\Epic Systems Corporation\Satellite" -Name Path
 $arg = "/F"
+#arg = "/F /NPS" --Image (silent) mode
 # Commands are run twice to account for Satellite updates
 Start-Process -FilePath $cmd -ArgumentList $arg -Verb RunAs -Wait
 Start-Process -FilePath $cmd -ArgumentList $arg -Verb RunAs -Wait
