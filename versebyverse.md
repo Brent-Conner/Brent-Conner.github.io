@@ -1,8 +1,8 @@
-## Verse by Verse Bible Study Tips
+## **Verse by Verse Bible Study Tips**
 
 ### 7 Foundational Concepts
-1. An important truth to remember when studying verse by verse, or any method for that matter, is to first pray that God will reveal His word to you through His Holy Spirt, since Jesus said He (the Spirit) will teach you all things. No one knows the thoughts of God, except the Spirt of God.
-John 14:26, 1 Corinthians 2:11
+>1. An important truth to remember when studying verse by verse, or any method for that matter, is to first pray that God will reveal His word to you through His Holy Spirt, since Jesus said He (the Spirit) will teach you all things. No one knows the thoughts of God, except the Spirt of God.
+>John 14:26, 1 Corinthians 2:11
 
 2. The verse and chapter numbers do not exist in the original Hebrew and Greek manuscripts. They are however a helpful way to organize the Bible, but often break up sentences and concepts that span across multiple verses. This is also true for our English punctuation.
 Ephesians 2:1-7 is one sentence in the Greek.
