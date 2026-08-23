@@ -33,7 +33,7 @@
 - Read confusing or archaically phrased verses in multiple translations.
 - Find cross references across the Bible for the verse's words or concepts.
 - Read multiple commentaries about the verse.
-- Some verses are simple to understand or very precious and should simply be memorized. (Psalm 119:11)
+- Some verses are easy to understand or very precious and should simply be memorized. (Psalm 119:11)
 
 ### While reading, ask these types of questions about each verse.
 
